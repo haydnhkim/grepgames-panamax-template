@@ -1,0 +1,16 @@
+---
+name: imaginary
+description: ''
+keywords: ''
+type: Default
+documentation: ''
+images:
+- name: h2non_imaginary_latest
+  source: h2non/imaginary:latest
+  category: imaginary
+  type: Default
+  ports:
+  - host_port: '8088'
+    container_port: '9000'
+    proto: TCP
+  command: "-cors -gzip"
